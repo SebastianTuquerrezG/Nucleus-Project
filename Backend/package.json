@@ -1,0 +1,26 @@
+{
+  "name": "backendnuc",
+  "version": "1.0.0",
+  "description": "functional app and connection with database",
+  "main": "../JS/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SebastianTuquerrezG/Nucleus-Project.git"
+  },
+  "keywords": [
+    "videogames",
+    "couple"
+  ],
+  "author": "Sebastian Tuquerrez, Julian Carvajal, Ruben Santiago, Naren Imbachi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianTuquerrezG/Nucleus-Project/issues"
+  },
+  "homepage": "https://github.com/SebastianTuquerrezG/Nucleus-Project#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
