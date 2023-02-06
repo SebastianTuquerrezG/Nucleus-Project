@@ -2,10 +2,24 @@ body {
   font-size: .875rem;
 }
 
+main{
+  background-color: #2470dc;
+}
+
 .feather {
   width: 16px;
   height: 16px;
   vertical-align: text-bottom;
+}
+
+.col-install{
+  margin: 27px;
+  margin-bottom: 10px;
+}
+
+.card-img-top-principal{
+  width: 9.8rem;
+  height: 13rem;
 }
 
 /*
@@ -26,6 +40,19 @@ body {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 
+.genres-buttoms {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.genre {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
 @media (max-width: 767.98px) {
   .sidebar {
     top: 5rem;
@@ -39,6 +66,16 @@ body {
   padding-top: .5rem;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.genre-link{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin: 5px;  
 }
 
 .sidebar .nav-link {
@@ -60,6 +97,29 @@ body {
   color: inherit;
 }
 
+.table-wrapper {
+  width: 100%;
+  height: 700px; /* Altura de ejemplo */
+  overflow: auto;
+}
+
+.table-wrapper table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-wrapper table thead {
+  position: -webkit-sticky; /* Safari... */
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.table-wrapper table thead th,
+.table-wrapper table tbody td {
+  border: 1px solid #000;
+  background-color: #FFF;
+}
 .sidebar-heading {
   font-size: .75rem;
   text-transform: uppercase;
@@ -86,6 +146,11 @@ body {
   padding: .75rem 1rem;
   border-width: 0;
   border-radius: 0;
+}
+
+.apex{
+    display: flex;
+    width: 33.33%;
 }
 
 .form-control-dark {
