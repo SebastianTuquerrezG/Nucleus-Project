@@ -40,7 +40,7 @@
 <body>
 
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <img src="\img\nucleus.jpg" width=50 />
+        <img src="../img/nucleus.jpg" width=50 />
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">NUCLEUS PROJECT</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
@@ -50,7 +50,7 @@
         <input class="form-control form-control-dark w-100" type="text" placeholder="Buscar" aria-label="Buscar">
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="\login.html">Desconectar</a>
+                <a class="nav-link px-3" href="../login/login.html">Desconectar</a>
             </div>
         </div>
     </header>
@@ -61,19 +61,19 @@
                 <div class="position-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="\dashboard\index.html">
+                            <a class="nav-link" href="../login/dashboard/index.html">
                                 <span data-feather="home"></span>
                                 Inicio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="\Perfil\perfil.html">
+                            <a class="nav-link active" href="#"  aria-current="page">
                                 <span data-feather="users"></span>
                                 Perfil
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="\Biblioteca\library.html">
+                            <a class="nav-link" href="../library/library.html">
                                 <span data-feather="book"></span>
                                 Biblioteca
                             </a>
@@ -86,46 +86,76 @@
                         </li>
                     </ul>
                     <!--Container Instalados-->
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
             <span>INSTALADOS</span>
-          </h6>
-          <div class="row">
-            <div class="col">
-              <div class="col">
-                  <div class="card-body">
-                      <div class="card" style="width: 5rem; height: 6rem;"  >
-                          <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 7rem; width: 5rem;"/></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="row">
-              <div class="col">
-                <div class="col">
-                    <div class="card-body">
-                        <div class="card" style="width: 5rem; height: 6rem;"  >
-                            <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 7rem; width: 5rem;"/></a>
+        </h6>
+        <div class="table-wrapper">
+            <table class="container text-center">
+                <div class="row">
+                    <div class="col-install">
+                        <div class="card" style="width: 8rem; display:flexbox;">
+                            <a class="" href="https://www.ea.com/es-es/games/apex-legends">
+                                <img src="../../../SQL/nucleus_images/steam/apex.jpg" class="card-img-top" alt="..." />
+                            </a>
+                            <div class="apex" ">
+                                <h7 class=" card-title">Apex Legends</h7>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="col">
-                    <div class="card-body">
-                        <div class="card" style="width: 5rem; height: 6rem;"  >
-                            <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 7rem; width: 5rem;"/></a>
+                <div class="row">
+                    <div class="col-install">
+                        <div class="card" style="width: 8rem; display:flexbox;">
+                            <a href="https://www.ubisoft.com/es-mx/game/assassins-creed/valhalla"><img
+                                    src="../../../SQL/nucleus_images/uPlay/assasins_creed.jpg" class="card-img-top"
+                                    alt="..." /></a>
+                            <div class="card-body">
+                                <h7 class="card-title">Assasins Creed Valhalla</h7>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!--Container Instalados-->
-                    </main>
+                <div class="row">
+                    <div class="col-install">
+                        <div class="card" style="width: 8rem; display:flexbox;">
+                            <a href="https://store.steampowered.com/app/1238860/Battlefield_4/"><img
+                                    src="../../../SQL/nucleus_images/origin/battlefield4.jpg" class="card-img-top"
+                                    alt="..." /></a>
+                            <div class="card-body">
+                                <h7 class="card-title">Battlefield 4</h7>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-install">
+                        <div class="card" style="width: 8rem; display:flexbox;">
+                            <a href="https://www.fallguys.com/es-ES/download"><img
+                                    src="../../../SQL/nucleus_images/epic_games/full_guys.jpg" class="card-img-top"
+                                    alt="..." /></a>
+                            <div class="card-body">
+                                <h7 class="card-title">Fall Guys</h7>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-install">
+                        <div class="card" style="width: 8rem; display:flexbox;">
+                            <a href="https://blog.counter-strike.net"><img
+                                    src="../../../SQL/nucleus_images/steam/counter_strike.jpg" class="card-img-top"
+                                    alt="..." /></a>
+                            <div class="card-body">
+                                <h7 class="card-title">Counter Strike</h7>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </table>
+        </div>
+        <!--Container Instalados-->
+                </main>
+        </div>
         </div>
         <!--Container Sugerencias-->
         <div class="container rounded bg-white mt-5 mb-5">
@@ -133,28 +163,28 @@
                 <div class="col-md-3 border-right">
                     <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img
                             class="rounded-circle mt-5" width="150px"
-                            src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span
+                            src="../img/icon_perfil.png"><span
                             class="font-weight-bold">Edogaru</span><span
                             class="text-black-50">edogaru@mail.com.my</span><span> </span></div>
                 </div>
                 <div class="col-md-5 border-right">
                     <div class="p-3 py-5">
                         <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h4 class="text-right">Opciones de perfil</h4>
+                            <h4 class="text-right">Informacion de perfil</h4>
                         </div>
                         <div class="row mt-2">
                             <div class="col-md-6"><label class="labels">Nombre</label><input type="text"
-                                    class="form-control" placeholder="perimer nombre" value=""></div>
+                                    class="form-control" placeholder="Primer Nombre" value=""></div>
                             <div class="col-md-6"><label class="labels">Apellido</label><input type="text"
-                                    class="form-control" value="" placeholder="Apellidos"></div>
+                                    class="form-control" value="" placeholder="Apellido"></div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-12"><label class="labels">Usuario</label><input type="text"
-                                    class="form-control" placeholder="Nuevo usuario" value=""></div>
+                                    class="form-control" placeholder="Username" value=""></div>
                             <div class="col-md-12"><label class="labels">Email</label><input type="text"
                                     class="form-control" placeholder="E-mail" value=""></div>
                             <div class="col-md-12"><label class="labels">Telefono</label><input type="text"
-                                    class="form-control" placeholder="+52......." value=""></div>
+                                    class="form-control" placeholder="contacto" value=""></div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-6"><label class="labels">Pais</label><input type="text"
