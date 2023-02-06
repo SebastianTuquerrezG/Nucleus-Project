@@ -2,7 +2,7 @@
   "name": "backendnuc",
   "version": "1.0.0",
   "description": "functional app and connection with database",
-  "main": "../JS/index.js",
+  "main": "./JS/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
