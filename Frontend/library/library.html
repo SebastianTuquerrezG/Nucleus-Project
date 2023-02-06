@@ -7,8 +7,8 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.84.0">
-  <title>Dashboard Template · Bootstrap v5.0</title>
-
+  <title>Nucleus Library</title>
+  <link rel="shortcut icon" href="../img/nucleus.jpg">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
 
 
@@ -40,7 +40,7 @@
 <body>
 
   <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <img src="\img\nucleus.jpg"width=50 />
+    <img src="../img/nucleus.jpg"width=50 />
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">NUCLEUS PROJECT</a>
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
       data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,19 +60,19 @@
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="\dashboard\index.html">
+              <a class="nav-link" href="\dashboard\index.html">
                 <span data-feather="home"></span>
                 Inicio
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="\Perfil\perfil.html">
+              <a class="nav-link" href="../Perfil/perfil.html">
                 <span data-feather="users"></span>
                 Perfil
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="\Biblioteca\library.html">
+              <a class="nav-link active" aria-current="page" href="#">
                 <span data-feather="book"></span>
                 Biblioteca
               </a>
@@ -88,53 +88,77 @@
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
             <span>INSTALADOS</span>
           </h6>
-          <div class="row">
-            <div class="col">
-              <div class="col">
-                  <div class="card-body">
-                      <div class="card" style="width: 5rem; height: 6rem;"  >
-                          <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 7rem; width: 5rem;"/></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="row">
-              <div class="col">
-                <div class="col">
-                    <div class="card-body">
-                        <div class="card" style="width: 5rem; height: 6rem;"  >
-                            <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 7rem; width: 5rem;"/></a>
+          <div class="table-wrapper">
+            <table class="container text-center">
+              <div class="row">
+                <div class="col-install">
+                  <div class="card" style="width: 8rem; display:flexbox;">
+                    <a class="" href="https://www.ea.com/es-es/games/apex-legends">
+                      <img src="../../../SQL/nucleus_images/steam/apex.jpg" class="card-img-top" alt="..." />
+                    </a>
+                    <div class="apex" ">
+                                <h7 class=" card-title">Apex Legends</h7>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="col">
+              <div class="row">
+                <div class="col-install">
+                  <div class="card" style="width: 8rem; display:flexbox;">
+                    <a href="https://www.ubisoft.com/es-mx/game/assassins-creed/valhalla"><img
+                        src="../../../SQL/nucleus_images/uPlay/assasins_creed.jpg" class="card-img-top" alt="..." /></a>
                     <div class="card-body">
-                        <div class="card" style="width: 5rem; height: 6rem;"  >
-                            <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 7rem; width: 5rem;"/></a>
+                      <h7 class="card-title">Assasins Creed Valhalla</h7>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="row">
+                <div class="col-install">
+                  <div class="card" style="width: 8rem; display:flexbox;">
+                    <a href="https://store.steampowered.com/app/1238860/Battlefield_4/"><img
+                        src="../../../SQL/nucleus_images/origin/battlefield4.jpg" class="card-img-top" alt="..." /></a>
+                    <div class="card-body">
+                      <h7 class="card-title">Battlefield 4</h7>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-install">
+                  <div class="card" style="width: 8rem; display:flexbox;">
+                    <a href="https://www.fallguys.com/es-ES/download"><img
+                        src="../../../SQL/nucleus_images/epic_games/full_guys.jpg" class="card-img-top" alt="..." /></a>
+                    <div class="card-body">
+                      <h7 class="card-title">Fall Guys</h7>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-install">
+                  <div class="card" style="width: 8rem; display:flexbox;">
+                    <a href="https://blog.counter-strike.net"><img src="../../../SQL/nucleus_images/steam/counter_strike.jpg"
+                        class="card-img-top" alt="..." /></a>
+                    <div class="card-body">
+                      <h7 class="card-title">Counter Strike</h7>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </table>
           </div>
           <!--Container Instalados-->
           </main>
         </div>
     </div>
-     <!--Container Sugerencias-->
-     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">TU BIBLIOTECA</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group me-2">
                 <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
               </div>
-             
             </div>
           </div>
           <h1 CLASS="h5">
@@ -143,143 +167,202 @@
         <div class="container text-center">
           <div class="row">
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 12rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 12rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 12rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 12rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 12rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem;" class="card-img-top-principal" alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 12rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h4">Mis juegos de steam</h1>
-          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-            <span data-feather="align-left"></span>
-            Filtrar
-          </button>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h4">Mis juegos de <h1 style="margin-right: 1200px;" id="To_change" class="h4">Steam</h1></h1>
+          <select id="dropdown">
+            <option value="option1">Steam</option>
+            <option value="option2">Uplay</option>
+            <option value="option3">Epic Games</option>
+            <option value="option4">Origin</option>
+          </select>
+          <script>
+            var dropdown = document.getElementById("dropdown");
+            var title = document.getElementById("To_change");
+            dropdown.addEventListener("change", function () {
+              switch (dropdown.value) {
+                case "option1":
+                  title.innerHTML = "Steam";
+                  break;
+                case "option2":
+                  title.innerHTML = "Uplay";
+                  break;
+                case "option3":
+                  title.innerHTML = "Epic Games";
+                  break;
+                case "option4":
+                  title.innerHTML = "Origin";
+                  break;
+              }
+            });
+          </script>
         </div>
         <div class="container text-center">
           <div class="row">
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img id="image-dynamic1"
+                    src="../../SQL/nucleus_images/steam/dota2.jpg" style="width: 10rem; height: 13rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 12rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img id="image-dynamic2"
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem; height: 13rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img id="image-dynamic3"
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem; height: 13rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img id="image-dynamic4"
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem; height: 13rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img id="image-dynamic5"
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem; height: 13rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div class="card" style="width: 10rem;">
+                <a href="https://store.steampowered.com/app/916440/Anno_1800/"><img id="image-dynamic6"
+                    src="../../../SQL/nucleus_images/uPlay/anno_1800.jpg" style="width: 10rem; height: 13rem;" class="card-img-top-principal"
+                    alt="..." /></a>
                 <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
+                  <h5 class="card-title">Anno 1800</h5>
                 </div>
               </div>
             </div>
-            <div class="col">
-                <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
-                </div>
-              </div>
-            </div>  
-            <div class="col">
-                <div class="card-body">
-                    <div class="card" style="width: 10rem; height: 10rem;"  >
-                        <a href="#"><img src="\Juegos\Kenshi.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 10rem;"/></a>
-                </div>
-              </div>
-            </div>
+            <script>
+              var dropdown = document.getElementById("dropdown");
+              var image1 = document.getElementById("image-dynamic1");
+              var image2 = document.getElementById("image-dynamic2");
+              var image3 = document.getElementById("image-dynamic3");
+              var image4 = document.getElementById("image-dynamic4");
+              var image5 = document.getElementById("image-dynamic5");
+              var image6 = document.getElementById("image-dynamic6");
+              dropdown.addEventListener("change", function () {
+                switch (dropdown.value) {
+                  case "option1":
+                    image1.src = "../../SQL/nucleus_images/steam/minecraft.jpg";
+                    image2.src = "../../SQL/nucleus_images/steam/lost_ark.jpg";
+                    image3.src = "../../SQL/nucleus_images/steam/counter_strike.jpg";
+                    image4.src = "../../SQL/nucleus_images/steam/goose_goose_duck.jpg";
+                    image5.src = "../../SQL/nucleus_images/steam/grand_theft_auto_v.jpg";
+                    image6.src = "../../SQL/nucleus_images/steam/minecraft.jpg";
+                    break;
+                  case "option2":
+                    image1.src = "../../SQL/nucleus_images/uPlay/anno_1800.jpg";
+                    image2.src = "../../SQL/nucleus_images/uPlay/assasins_creed.jpg";
+                    image3.src = "../../SQL/nucleus_images/uPlay/far_cry_6.webp";
+                    image4.src = "../../SQL/nucleus_images/uPlay/riders_republic.jpeg";
+                    image5.src = "../../SQL/nucleus_images/uPlay/tom_clancys.jpg";
+                    image6.src = "../../SQL/nucleus_images/steam/minecraft.jpg";
+                    break;
+                  case "option3":
+                    image1.src = "../../SQL/nucleus_images/epic_games/adios.jpg";
+                    image2.src = "../../SQL/nucleus_images/epic_games/red_dead.webp";
+                    image3.src = "../../SQL/nucleus_images/epic_games/starwars.webp";
+                    image4.src = "../../SQL/nucleus_images/epic_games/grand_theft_auto.jpg";
+                    image5.src = "../../SQL/nucleus_images/epic_games/full_guys.jpg";
+                    image6.src = "../../SQL/nucleus_images/epic_games/league_of_legends.jpg";
+                    break;
+                  case "option4":
+                    image1.src = "../../SQL/nucleus_images/origin/battlefield4.jpg";
+                    image2.src = "../../SQL/nucleus_images/origin/mass_efect.jpg";
+                    image3.src = "../../SQL/nucleus_images/origin/battlefield5.jpg";
+                    image4.src = "../../SQL/nucleus_images/origin/the_sims4.png";
+                    image5.src = "../../SQL/nucleus_images/origin/titanfall2.jpg";
+                    image6.src = "../../SQL/nucleus_images/origin/need_for_speed.jpg";
+                    break;
+                }
+              });
+            </script>
           </div>
         </div>
     </div>
