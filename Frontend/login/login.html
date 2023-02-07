@@ -9,10 +9,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link rel="shortcut icon" href="../img/nucleus.jpg">
 	<link rel="stylesheet" href="./style.css">
+	<script src="../../Backend/JS/index.js"></script>
 </head>
 <!--Coded with love by Mutiullah Samim-->
-<body style="background-color: #5F73AE;">
-    
+<body style="background-color: #5F73AE;">    
 	<div class="container h-100">
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
@@ -27,18 +27,18 @@
 					</div>
 				<br>
 				<div class="d-flex justify-content-center form_container">
-					<form>
+					<form id="formulario">
 						<div class="input-group mb-3">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="" class="form-control input_user" value="" placeholder="username">
+							<input id="mail_user" type="text" name="" class="form-control input_user" value="" placeholder="username">
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+							<input id="pw_user" type="password" name="" class="form-control input_pass" value="" placeholder="password">
 						</div>
 						<div class="form-group">
 							<div class="custom-control custom-checkbox">
@@ -50,6 +50,28 @@
                     <a href="dashboard\index.html" class="btn btn-primary">Login</a>				 	
 				</div>
 					</form>
+					<script>
+						document.addEventListener("DOMContentLoaded", function () {
+							document.getElementById("formulario").addEventListener("submit", function (event) {
+								event.preventDefault();
+								var mail_user = document.getElementById("mail_user").value;
+								var pw_user = document.getElementById("pw_user").value;
+								var xhr = new XMLHttpRequest();
+								xhr.open("POST", "../../Backend/JS/login.js", true);
+								xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+								xhr.onreadystatechange = function () {
+									if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+										if (xhr.responseText == 1) {
+											window.location.href = "dashboard/index.html";
+										} else {
+											alert("Usuario o contraseña incorrectos");
+										}
+									}
+								};
+								xhr.send("mail_user=" + encodeURIComponent(mail_user) + "&pw_user=" + encodeURIComponent(pw_user));
+							});
+						});
+					</script>
 				</div>
 		
 				<div class="mt-4">
